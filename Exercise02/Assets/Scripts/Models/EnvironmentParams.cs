@@ -21,6 +21,18 @@ namespace Assets.Scripts.Models
 
         #endregion
 
+        #region Methods
+
+        public override string ToString()
+        {
+            return $"Game Version: {GameVersion}, " +
+                      $"Log Prefix: {LogPrefix}, " +
+                      $"Server Timeout: {ServerTimeOut}, " +
+                      $"Server Address: {ServerAddress} ";
+        }
+
+        #endregion
+
         #region Properties
 
         public string ServerAddress => _serverAddress;

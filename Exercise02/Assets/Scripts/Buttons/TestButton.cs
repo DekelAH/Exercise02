@@ -8,10 +8,7 @@ namespace Assets.Scripts.Buttons
         public void OnTestBtnClick()
         {
             var currentGameConfig = GameConfiguration.ConfingSelectorInstance.CurrentConfig;
-            Debug.Log($"Game Version: {currentGameConfig.GameVersion}, " +
-                      $"Log Prefix: {currentGameConfig.LogPrefix}, " +
-                      $"Server Timeout: {currentGameConfig.ServerTimeOut}, " +
-                      $"Server Address: {currentGameConfig.ServerAddress} ");
+            Debug.Log(currentGameConfig.ToString());
         }
     }
 }
